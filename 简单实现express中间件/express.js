@@ -105,7 +105,7 @@ class Express {
 
         return stack;
     }
-    // express 中间件原理实现
+    // express 中间件 next 原理实现
     handle(req, res, stack) {
         const next = () => {
             const middleWare = stack.shift();
